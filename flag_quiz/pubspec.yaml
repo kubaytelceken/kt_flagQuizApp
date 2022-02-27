@@ -1,0 +1,261 @@
+name: flag_quiz
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  sqflite: ^2.0.2
+  path: ^1.8.0
+  lottie: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^1.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/splashback.json
+    - assets/amerikaKita.png
+    - assets/afrika.png
+    - assets/asya.png
+    - assets/avrupa.png
+    - assets/avustralyaKita.png
+    - assets/afrika/angola.png
+    - assets/afrika/benin.png
+    - assets/afrika/botsvana.png
+    - assets/afrika/burkinafaso.png
+    - assets/afrika/cad.png
+    - assets/afrika/cezayir.png
+    - assets/afrika/etiyopya.png
+    - assets/afrika/fac.png
+    - assets/afrika/fas.png
+    - assets/afrika/fildisi.png
+    - assets/afrika/gabon.png
+    - assets/afrika/gambiya.png
+    - assets/afrika/gana.png
+    - assets/afrika/gine.png
+    - assets/afrika/kamerun.png
+    - assets/afrika/kenya.png
+    - assets/afrika/kongo.png
+    - assets/afrika/kongocumhuriyet.png
+    - assets/afrika/liberya.png
+    - assets/afrika/libya.png
+    - assets/afrika/madagaskar.png
+    - assets/afrika/malavi.png
+    - assets/afrika/mali.png
+    - assets/afrika/misir.png
+    - assets/afrika/moritanya.png
+    - assets/afrika/mozambik.png
+    - assets/afrika/namibya.png
+    - assets/afrika/nijer.png
+    - assets/afrika/nijerya.png
+    - assets/afrika/senegal.png
+    - assets/afrika/somali.png
+    - assets/afrika/sudan.png
+    - assets/afrika/tanzanya.png
+    - assets/afrika/togo.png
+    - assets/afrika/tunus.png
+    - assets/afrika/uganda.png
+    - assets/afrika/zambiya.png
+    - assets/afrika/zimbabve.png
+    - assets/amerika/amerika.png
+    - assets/amerika/arjantin.png
+    - assets/amerika/bahamalar.png
+    - assets/amerika/barbados.png
+    - assets/amerika/bolivya.png
+    - assets/amerika/brezilya.png
+    - assets/amerika/dominik.png
+    - assets/amerika/ekvador.png
+    - assets/amerika/elsalvador.png
+    - assets/amerika/guatemala.png
+    - assets/amerika/haiti.png
+    - assets/amerika/honduras.png
+    - assets/amerika/jamaika.png
+    - assets/amerika/kanada.png
+    - assets/amerika/kolombiya.png
+    - assets/amerika/kostarika.png
+    - assets/amerika/kuba.png
+    - assets/amerika/meksika.png
+    - assets/amerika/panama.png
+    - assets/amerika/paraguay.png
+    - assets/amerika/peru.png
+    - assets/amerika/portoriko.png
+    - assets/amerika/sili.png
+    - assets/amerika/uruguay.png
+    - assets/amerika/venezuela.png
+    - assets/asya/afganistan.png
+    - assets/asya/bae.png
+    - assets/asya/bahreyn.png
+    - assets/asya/banglades.png
+    - assets/asya/bhutan.png
+    - assets/asya/cin.png
+    - assets/asya/endonezya.png
+    - assets/asya/filipinler.png
+    - assets/asya/filistin.png
+    - assets/asya/guneykore.png
+    - assets/asya/hindistan.png
+    - assets/asya/irak.png
+    - assets/asya/iran.png
+    - assets/asya/israil.png
+    - assets/asya/japonya.png
+    - assets/asya/kambocya.png
+    - assets/asya/katar.png
+    - assets/asya/kazakistan.png
+    - assets/asya/kirgizistan.png
+    - assets/asya/kuveyt.png
+    - assets/asya/kuzeykore.png
+    - assets/asya/lubnan.png
+    - assets/asya/maldivler.png
+    - assets/asya/malezya.png
+    - assets/asya/misir.png
+    - assets/asya/mogolistan.png
+    - assets/asya/mynmar.png
+    - assets/asya/nepal.png
+    - assets/asya/ozbekistan.png
+    - assets/asya/pakistan.png
+    - assets/asya/rusya.png
+    - assets/asya/singapur.png
+    - assets/asya/srilanka.png
+    - assets/asya/suriye.png
+    - assets/asya/suudi.png
+    - assets/asya/tacikistan.png
+    - assets/asya/tayland.png
+    - assets/asya/turkmenistan.png
+    - assets/asya/umman.png
+    - assets/asya/urdun.png
+    - assets/asya/vietnam.png
+    - assets/asya/yemen.png
+    - assets/avrupa/almanya.png
+    - assets/avrupa/andorra.png
+    - assets/avrupa/arnavutluk.png
+    - assets/avrupa/avusturya.png
+    - assets/avrupa/azerbaycan.png
+    - assets/avrupa/belarus.png
+    - assets/avrupa/belcika.png
+    - assets/avrupa/birlesik.png
+    - assets/avrupa/bosna.png
+    - assets/avrupa/bulgaristan.png
+    - assets/avrupa/cekya.png
+    - assets/avrupa/danimarka.png
+    - assets/avrupa/ermenistan.png
+    - assets/avrupa/estonya.png
+    - assets/avrupa/faroe.png
+    - assets/avrupa/finlandiya.png
+    - assets/avrupa/fransa.png
+    - assets/avrupa/gurcistan.png
+    - assets/avrupa/hirvatistan.png
+    - assets/avrupa/hollanda.png
+    - assets/avrupa/irlanda.png
+    - assets/avrupa/ispanya.png
+    - assets/avrupa/isvec.png
+    - assets/avrupa/isvicre.png
+    - assets/avrupa/italya.png
+    - assets/avrupa/izlanda.png
+    - assets/avrupa/karadag.png
+    - assets/avrupa/kibris.png
+    - assets/avrupa/kosova.png
+    - assets/avrupa/kuzeymak.png
+    - assets/avrupa/letonya.png
+    - assets/avrupa/litvanya.png
+    - assets/avrupa/luksemburg.png
+    - assets/avrupa/macaristan.png
+    - assets/avrupa/malta.png
+    - assets/avrupa/moldova.png
+    - assets/avrupa/monako.png
+    - assets/avrupa/norvec.png
+    - assets/avrupa/polonya.png
+    - assets/avrupa/portekiz.png
+    - assets/avrupa/romanya.png
+    - assets/avrupa/sanmarino.png
+    - assets/avrupa/sirbistan.png
+    - assets/avrupa/slovakya.png
+    - assets/avrupa/slovenya.png
+    - assets/avrupa/turkiye.png
+    - assets/avrupa/ukrayna.png
+    - assets/avrupa/vatikan.png
+    - assets/avrupa/yunanistan.png
+    - assets/avustralya/avustralya.png
+    - assets/avustralya/fiji.png
+    - assets/avustralya/kiribati.png
+    - assets/avustralya/marshall.png
+    - assets/avustralya/nauru.png
+    - assets/avustralya/palau.png
+    - assets/avustralya/samoa.png
+    - assets/avustralya/solomon.png
+    - assets/avustralya/tonga.png
+    - assets/avustralya/tuvalu.png
+    - assets/avustralya/vanuatu.png
+    - assets/avustralya/yenigine.png
+    - assets/avustralya/yenizelanda.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: NovaRound
+      fonts:
+        - asset: assets/fonts/NovaRound-Regular.ttf
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
